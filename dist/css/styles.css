@@ -1,633 +1,647 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:900,700,400|Karla:400';
 
 .col {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .col:before {
     content: '';
-    display: table
+    display: table;
 }
 
 .col:after {
     content: '';
     display: table;
-    clear: both
+    clear: both;
 }
 
 .col-mobile .one-half {
-    width: calc(99.9% * 1/2 - (30px - 30px * 1/2)) !important
+    width: calc(99.9% * 1/2 - (30px - 30px * 1/2)) !important;
 }
 
 .col-mobile .one-half:nth-child(1n) {
     float: left !important;
     margin-right: 30px !important;
-    clear: none !important
+    clear: none !important;
 }
 
 .col-mobile .one-half:last-child {
-    margin-right: 0 !important
+    margin-right: 0 !important;
 }
 
 .col-mobile .one-half:nth-child(2n) {
     margin-right: 0 !important;
-    float: right !important
+    float: right !important;
 }
 
 .col-mobile .one-half:nth-child(2n + 1) {
-    clear: both !important
+    clear: both !important;
 }
 
 .col-mobile .one-thirds {
-    width: calc(99.9% * 1/3 - (30px - 30px * 1/3)) !important
+    width: calc(99.9% * 1/3 - (30px - 30px * 1/3)) !important;
 }
 
 .col-mobile .one-thirds:nth-child(1n) {
     float: left !important;
     margin-right: 30px !important;
-    clear: none !important
+    clear: none !important;
 }
 
 .col-mobile .one-thirds:last-child {
-    margin-right: 0 !important
+    margin-right: 0 !important;
 }
 
 .col-mobile .one-thirds:nth-child(3n) {
     margin-right: 0 !important;
-    float: right !important
+    float: right !important;
 }
 
 .col-mobile .one-thirds:nth-child(3n + 1) {
-    clear: both !important
+    clear: both !important;
 }
 
 .col-mobile .one-quarter {
-    width: calc(99.9% * 1/4 - (30px - 30px * 1/4)) !important
+    width: calc(99.9% * 1/4 - (30px - 30px * 1/4)) !important;
 }
 
 .col-mobile .one-quarter:nth-child(1n) {
     float: left !important;
     margin-right: 30px !important;
-    clear: none !important
+    clear: none !important;
 }
 
 .col-mobile .one-quarter:last-child {
-    margin-right: 0 !important
+    margin-right: 0 !important;
 }
 
 .col-mobile .one-quarter:nth-child(4n) {
     margin-right: 0 !important;
-    float: right !important
+    float: right !important;
 }
 
 .col-mobile .one-quarter:nth-child(4n + 1) {
-    clear: both !important
+    clear: both !important;
 }
 
 .col-mobile .two-thirds {
-    width: calc(99.9% * 2/3 - (30px - 30px * 2/3)) !important
+    width: calc(99.9% * 2/3 - (30px - 30px * 2/3)) !important;
 }
 
 .col-mobile .two-thirds:nth-child(1n) {
     float: left !important;
     margin-right: 30px !important;
-    clear: none !important
+    clear: none !important;
 }
 
 .col-mobile .two-thirds:last-child {
-    margin-right: 0 !important
+    margin-right: 0 !important;
 }
 
 .col-mobile .two-thirds:nth-child(3n) {
     margin-right: 0 !important;
-    float: right !important
+    float: right !important;
 }
 
 .col-mobile .two-thirds:nth-child(3n + 1) {
-    clear: both !important
+    clear: both !important;
 }
 
 .col-mobile .two-quarter {
-    width: calc(99.9% * 2/4 - (30px - 30px * 2/4)) !important
+    width: calc(99.9% * 2/4 - (30px - 30px * 2/4)) !important;
 }
 
 .col-mobile .two-quarter:nth-child(1n) {
     float: left !important;
     margin-right: 30px !important;
-    clear: none !important
+    clear: none !important;
 }
 
 .col-mobile .two-quarter:last-child {
-    margin-right: 0 !important
+    margin-right: 0 !important;
 }
 
 .col-mobile .two-quarter:nth-child(4n) {
     margin-right: 0 !important;
-    float: right !important
+    float: right !important;
 }
 
 .col-mobile .two-quarter:nth-child(4n + 1) {
-    clear: both !important
+    clear: both !important;
 }
 
 .col-mobile .three-quarter {
-    width: calc(99.9% * 3/4 - (30px - 30px * 3/4)) !important
+    width: calc(99.9% * 3/4 - (30px - 30px * 3/4)) !important;
 }
 
 .col-mobile .three-quarter:nth-child(1n) {
     float: left !important;
     margin-right: 30px !important;
-    clear: none !important
+    clear: none !important;
 }
 
 .col-mobile .three-quarter:last-child {
-    margin-right: 0 !important
+    margin-right: 0 !important;
 }
 
 .col-mobile .three-quarter:nth-child(4n) {
     margin-right: 0 !important;
-    float: right !important
+    float: right !important;
 }
 
 .col-mobile .three-quarter:nth-child(4n + 1) {
-    clear: both !important
+    clear: both !important;
 }
 /** Class that identify a full width column **/
 .full {
-    width: calc(99.9% * 1/1 - (30px - 30px * 1/1))
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
 }
 
 .full:nth-child(1n) {
     float: left;
     margin-right: 30px;
-    clear: none
+    clear: none;
 }
 
 .full:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .full:nth-child(1n) {
     margin-right: 0;
-    float: right
+    float: right;
 }
 
 .full:nth-child(1n + 1) {
-    clear: both
+    clear: both;
 }
 /** Class that identify a one half column **/
 .one-half {
-    width: calc(99.9% * 1/1 - (30px - 30px * 1/1))
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
 }
 
 .one-half:nth-child(1n) {
     float: left;
     margin-right: 30px;
-    clear: none
+    clear: none;
 }
 
 .one-half:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .one-half:nth-child(1n) {
     margin-right: 0;
-    float: right
+    float: right;
 }
 
 .one-half:nth-child(1n + 1) {
-    clear: both
+    clear: both;
 }
 
 @media(min-width:768px) {
     .one-half {
-        width: calc(99.9% * 1/2 - (30px - 30px * 1/2))
+        width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
     }
 
     .one-half:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .one-half:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .one-half:nth-child(2n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .one-half:nth-child(2n + 1) {
-        clear: both
+        clear: both;
     }
 }
 
 @media(min-width:1200px) {
     .one-half {
-        width: calc(99.9% * 1/2 - (30px - 30px * 1/2))
+        width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
     }
 
     .one-half:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .one-half:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .one-half:nth-child(2n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .one-half:nth-child(2n + 1) {
-        clear: both
+        clear: both;
     }
 }
 /** Class that identify a two thirds column **/
 .two-thirds {
-    width: calc(99.9% * 1/1 - (30px - 30px * 1/1))
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
 }
 
 .two-thirds:nth-child(1n) {
     float: left;
     margin-right: 30px;
-    clear: none
+    clear: none;
 }
 
 .two-thirds:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .two-thirds:nth-child(1n) {
     margin-right: 0;
-    float: right
+    float: right;
 }
 
 .two-thirds:nth-child(1n + 1) {
-    clear: both
+    clear: both;
 }
 
 @media(min-width:768px) {
     .two-thirds {
-        width: calc(99.9% * 2/3 - (30px - 30px * 2/3))
+        width: calc(99.9% * 2/3 - (30px - 30px * 2/3));
     }
 
     .two-thirds:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .two-thirds:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .two-thirds:nth-child(3n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .two-thirds:nth-child(3n + 1) {
-        clear: both
+        clear: both;
     }
 }
 
 @media(min-width:1200px) {
     .two-thirds {
-        width: calc(99.9% * 2/3 - (30px - 30px * 2/3))
+        width: calc(99.9% * 2/3 - (30px - 30px * 2/3));
     }
 
     .two-thirds:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .two-thirds:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .two-thirds:nth-child(3n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .two-thirds:nth-child(3n + 1) {
-        clear: both
+        clear: both;
     }
 }
 /** Class that identify a one thirds column **/
 .one-thirds {
-    width: calc(99.9% * 1/1 - (30px - 30px * 1/1))
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
 }
 
 .one-thirds:nth-child(1n) {
     float: left;
     margin-right: 30px;
-    clear: none
+    clear: none;
 }
 
 .one-thirds:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .one-thirds:nth-child(1n) {
     margin-right: 0;
-    float: right
+    float: right;
 }
 
 .one-thirds:nth-child(1n + 1) {
-    clear: both
+    clear: both;
 }
 
 @media(min-width:768px) {
     .one-thirds {
-        width: calc(99.9% * 2/3 - (30px - 30px * 2/3))
+        width: calc(99.9% * 2/3 - (30px - 30px * 2/3));
     }
 
     .one-thirds:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .one-thirds:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .one-thirds:nth-child(3n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .one-thirds:nth-child(3n + 1) {
-        clear: both
+        clear: both;
     }
 }
 
 @media(min-width:1200px) {
     .one-thirds {
-        width: calc(99.9% * 2/3 - (30px - 30px * 2/3))
+        width: calc(99.9% * 2/3 - (30px - 30px * 2/3));
     }
 
     .one-thirds:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .one-thirds:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .one-thirds:nth-child(3n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .one-thirds:nth-child(3n + 1) {
-        clear: both
+        clear: both;
     }
 }
 /** Class that identify a one quarter column **/
 .one-quarter {
-    width: calc(99.9% * 1/1 - (30px - 30px * 1/1))
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
 }
 
 .one-quarter:nth-child(1n) {
     float: left;
     margin-right: 30px;
-    clear: none
+    clear: none;
 }
 
 .one-quarter:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .one-quarter:nth-child(1n) {
     margin-right: 0;
-    float: right
+    float: right;
 }
 
 .one-quarter:nth-child(1n + 1) {
-    clear: both
+    clear: both;
 }
 
 @media(min-width:768px) {
     .one-quarter {
-        width: calc(99.9% * 1/4 - (30px - 30px * 1/4))
+        width: calc(99.9% * 1/4 - (30px - 30px * 1/4));
     }
 
     .one-quarter:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .one-quarter:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .one-quarter:nth-child(4n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .one-quarter:nth-child(4n + 1) {
-        clear: both
+        clear: both;
     }
 }
 
 @media(min-width:1200px) {
     .one-quarter {
-        width: calc(99.9% * 1/4 - (30px - 30px * 1/4))
+        width: calc(99.9% * 1/4 - (30px - 30px * 1/4));
     }
 
     .one-quarter:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .one-quarter:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .one-quarter:nth-child(4n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .one-quarter:nth-child(4n + 1) {
-        clear: both
+        clear: both;
     }
 }
 /** Class that identify a two quarter column **/
 .two-quarter {
-    width: calc(99.9% * 1/1 - (30px - 30px * 1/1))
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
 }
 
 .two-quarter:nth-child(1n) {
     float: left;
     margin-right: 30px;
-    clear: none
+    clear: none;
 }
 
 .two-quarter:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .two-quarter:nth-child(1n) {
     margin-right: 0;
-    float: right
+    float: right;
 }
 
 .two-quarter:nth-child(1n + 1) {
-    clear: both
+    clear: both;
 }
 
 @media(min-width:768px) {
     .two-quarter {
-        width: calc(99.9% * 2/4 - (30px - 30px * 2/4))
+        width: calc(99.9% * 2/4 - (30px - 30px * 2/4));
     }
 
     .two-quarter:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .two-quarter:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .two-quarter:nth-child(4n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .two-quarter:nth-child(4n + 1) {
-        clear: both
+        clear: both;
     }
 }
 
 @media(min-width:1200px) {
     .two-quarter {
-        width: calc(99.9% * 2/4 - (30px - 30px * 2/4))
+        width: calc(99.9% * 2/4 - (30px - 30px * 2/4));
     }
 
     .two-quarter:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .two-quarter:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .two-quarter:nth-child(4n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .two-quarter:nth-child(4n + 1) {
-        clear: both
+        clear: both;
     }
 }
 /** Class that identify a three quarter column **/
 .three-quarter {
-    width: calc(99.9% * 1/1 - (30px - 30px * 1/1))
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
 }
 
 .three-quarter:nth-child(1n) {
     float: left;
     margin-right: 30px;
-    clear: none
+    clear: none;
 }
 
 .three-quarter:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .three-quarter:nth-child(1n) {
     margin-right: 0;
-    float: right
+    float: right;
 }
 
 .three-quarter:nth-child(1n + 1) {
-    clear: both
+    clear: both;
 }
 
 @media(min-width:768px) {
     .three-quarter {
-        width: calc(99.9% * 3/4 - (30px - 30px * 3/4))
+        width: calc(99.9% * 3/4 - (30px - 30px * 3/4));
     }
 
     .three-quarter:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .three-quarter:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .three-quarter:nth-child(4n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .three-quarter:nth-child(4n + 1) {
-        clear: both
+        clear: both;
     }
 }
 
 @media(min-width:1200px) {
     .three-quarter {
-        width: calc(99.9% * 3/4 - (30px - 30px * 3/4))
+        width: calc(99.9% * 3/4 - (30px - 30px * 3/4));
     }
 
     .three-quarter:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        clear: none
+        clear: none;
     }
 
     .three-quarter:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .three-quarter:nth-child(4n) {
         margin-right: 0;
-        float: right
+        float: right;
     }
 
     .three-quarter:nth-child(4n + 1) {
-        clear: both
+        clear: both;
     }
 }
 /* Class that contains grid columns */
 .container:before {
     content: '';
-    display: table
+    display: table;
 }
 
 .container:after {
     content: '';
     display: table;
-    clear: both
+    clear: both;
 }
 
 html {
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+body ::-moz-selection {
+    background-color: #009688;
+    color: #f5f5f5;
+}
+
+body ::selection {
+    background-color: #009688;
+    color: #f5f5f5;
 }
 
 h1 {
@@ -640,7 +654,7 @@ h1 {
     margin-bottom: 10px;
     letter-spacing: -0.72px;
     word-spacing: 0.00px;
-    text-transform: none
+    text-transform: none;
 }
 
 h2 {
@@ -653,7 +667,7 @@ h2 {
     margin-bottom: 5px;
     letter-spacing: -0.72px;
     word-spacing: 0.00px;
-    text-transform: none
+    text-transform: none;
 }
 
 h3 {
@@ -666,7 +680,7 @@ h3 {
     margin-bottom: 5px;
     letter-spacing: 0.00px;
     word-spacing: 0.00px;
-    text-transform: none
+    text-transform: none;
 }
 
 p {
@@ -681,7 +695,7 @@ p {
     word-spacing: -0.10px;
     text-transform: none;
     padding: 3.2px 12.8px;
-    padding: 0.2rem 0.8rem
+    padding: 0.2rem 0.8rem;
 }
 
 .button {
@@ -689,7 +703,7 @@ p {
     font-size: 1.3em;
     padding: 8px 16px;
     padding: 0.5rem 1rem;
-    background-color: #ff4444;
+    background-color: #009688;
     margin: 8px;
     margin: .5rem;
     vertical-align: middle;
@@ -697,15 +711,15 @@ p {
     text-align: center;
     border-radius: 3px;
     font-family: "Karla", sans-serif;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .button--small {
-    font-size: 0.8em
+    font-size: 0.8em;
 }
 
 .button--large {
-    font-size: 2em
+    font-size: 2em;
 }
 
 

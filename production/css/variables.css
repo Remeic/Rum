@@ -1,11 +1,15 @@
 :root {
   --white: #f5f5f5;
-  --buttonBackground: #ff4444;
+  --buttonBackground: #009688;
+  --primaryColor: #009688;
 
 
   --buttonTextMediumDimension: 1.3em;
   --buttonTextSmallDimension: 0.8em;
   --buttonTextLargeDimension: 2em;
+
+  --baseFont: "Lato", sans-serif;
+  --alternativeFont: "Karla", sans-serif;
 }
 
 @custom-media    --tablet (min-width:768px);
