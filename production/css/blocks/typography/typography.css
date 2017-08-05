@@ -4,8 +4,17 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    font-family: var(--baseFont);
+
+    ::selection{
+        background-color: var(--primaryColor);
+        color:var(--white);
+    }
+}
+
 h1 {
-    font-family: "Lato", sans-serif;
+    font-family: var(--baseFont);
     font-size: 30px;
     font-weight: 700;
     line-height: 1.25;
@@ -18,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Lato", sans-serif;
+    font-family: var(--baseFont);
     font-size: 26px;
     font-weight: 700;
     line-height: 1.30;
@@ -31,7 +40,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Lato", sans-serif;
+    font-family: var(--baseFont);
     font-size: 20px;
     font-weight: 400;
     line-height: 1.40;
@@ -44,7 +53,7 @@ h3 {
 }
 
 p {
-    font-family: "Karla", sans-serif;
+    font-family: var(--alternativeFont);
     font-size: 20px;
     font-weight: 400;
     line-height: 1.60;
