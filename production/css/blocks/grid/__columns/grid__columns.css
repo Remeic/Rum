@@ -1,0 +1,116 @@
+
+.col{
+  lost-utility: clearfix;
+  box-sizing: border-box;
+}
+
+.col-mobile{
+    .one-half{ 
+        lost-column:1/2 !important;
+    }
+    .one-thirds{
+        lost-column:1/3 !important;
+    }
+    .one-quarter{
+        lost-column:1/4 !important;
+    }
+    .two-thirds{ 
+        lost-column:2/3 !important; 
+    }
+    .two-quarter{
+        lost-column:2/4 !important; 
+    }
+    .three-quarter{
+        lost-column:3/4 !important; 
+    }
+}
+
+/** Class that identify a full width column **/
+.full {
+    lost-column:1/1;
+}
+
+/** Class that identify a one half column **/
+.one-half {
+    lost-column:1/1;
+    
+    @media(--tablet){
+        lost-column:1/2;
+    }
+
+    @media(--desktop){
+        lost-column:1/2;
+    }
+    
+}
+
+/** Class that identify a two thirds column **/
+.two-thirds{
+    lost-column:1/1;
+    
+    @media(--tablet){
+        lost-column:2/3;
+    }
+
+    @media(--desktop){
+        lost-column:2/3;
+    }
+    
+}
+
+/** Class that identify a one thirds column **/
+.one-thirds{
+    lost-column:1/1;
+    
+    @media(--tablet){
+        lost-column:2/3;
+    }
+
+    @media(--desktop){
+        lost-column:2/3;
+    }
+
+}
+
+/** Class that identify a one quarter column **/
+.one-quarter{
+    lost-column:1/1;
+    
+    @media(--tablet){
+        lost-column:1/4;
+    }
+
+    @media(--desktop){
+        lost-column:1/4;
+    }
+
+}
+
+/** Class that identify a two quarter column **/
+.two-quarter{
+    lost-column:1/1;
+    
+    @media(--tablet){
+        lost-column:2/4;
+    }
+
+    @media(--desktop){
+        lost-column:2/4;
+    }
+
+}
+
+
+/** Class that identify a three quarter column **/
+.three-quarter{
+    lost-column:1/1;
+    
+    @media(--tablet){
+        lost-column:3/4;
+    }
+
+    @media(--desktop){
+        lost-column:3/4;
+    }
+
+}
