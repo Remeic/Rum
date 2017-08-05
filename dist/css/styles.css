@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:900,700,400|Karla:400';
+
 .col {
     box-sizing: border-box
 }
@@ -677,11 +679,34 @@ p {
     margin-bottom: 25px;
     letter-spacing: -0.30px;
     word-spacing: -0.10px;
-    text-transform: none
+    text-transform: none;
+    padding: 3.2px 12.8px;
+    padding: 0.2rem 0.8rem
 }
 
-.oop {
-    color: #ff4444
+.button {
+    color: #f5f5f5;
+    font-size: 1.3em;
+    padding: 8px 16px;
+    padding: 0.5rem 1rem;
+    background-color: #ff4444;
+    margin: 8px;
+    margin: .5rem;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    font-family: "Karla", sans-serif;
+    font-weight: 700
 }
+
+.button--small {
+    font-size: 0.8em
+}
+
+.button--large {
+    font-size: 2em
+}
+
 
 /*# sourceMappingURL=styles.css.map */
