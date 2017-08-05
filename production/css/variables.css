@@ -1,0 +1,13 @@
+:root {
+  --white: #f5f5f5;
+  --buttonBackground: #ff4444;
+
+
+  --buttonTextMediumDimension: 1.3em;
+  --buttonTextSmallDimension: 0.8em;
+  --buttonTextLargeDimension: 2em;
+}
+
+@custom-media    --tablet (min-width:768px);
+@custom-media    --desktop (min-width:1200px);
+
