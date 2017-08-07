@@ -635,12 +635,12 @@ body {
 }
 
 body ::-moz-selection {
-    background-color: #009688;
+    background-color: #2979FF;
     color: #f5f5f5;
 }
 
 body ::selection {
-    background-color: #009688;
+    background-color: #2979FF;
     color: #f5f5f5;
 }
 
@@ -703,7 +703,7 @@ p {
     font-size: 1.3em;
     padding: 8px 16px;
     padding: 0.5rem 1rem;
-    background-color: #009688;
+    background-color: #2979FF;
     margin: 8px;
     margin: .5rem;
     vertical-align: middle;
@@ -726,6 +726,12 @@ p {
 
 .button--large {
     font-size: 2em;
+}
+
+.button--alt {
+    background-color: transparent;
+    color: #2962FF;
+    border: .1em solid;
 }
 
 

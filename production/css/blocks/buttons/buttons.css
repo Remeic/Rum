@@ -2,7 +2,7 @@
     color: var(--white);
     font-size: var(--buttonTextMediumDimension);
     padding: 0.5rem 1rem;
-    background-color: var(--buttonBackground);
+    background-color: var(--primaryColor);
     margin: .5rem;
     vertical-align: middle;
     display: inline-block;
@@ -23,5 +23,11 @@
 
     &--large{
         font-size: var(--buttonTextLargeDimension);
+    }
+
+    &--alt{
+        background-color: transparent;
+        color: var(--secondaryColor);
+        border: .1em solid;
     }
 }
