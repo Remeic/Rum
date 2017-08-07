@@ -710,8 +710,14 @@ p {
     display: inline-block;
     text-align: center;
     border-radius: 3px;
-    font-family: "Karla", sans-serif;
+    font-family: "Karla", sans-serif, sans-serif;
     font-weight: 700;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
 }
 
 .button--small {

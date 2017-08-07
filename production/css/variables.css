@@ -10,6 +10,8 @@
 
   --baseFont: "Lato", sans-serif;
   --alternativeFont: "Karla", sans-serif;
+
+  --timing: .3s;
 }
 
 @custom-media    --tablet (min-width:768px);
