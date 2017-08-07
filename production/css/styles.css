@@ -1,8 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:900,700,400|Karla:400';
 
+@import '../../node_modules/normalize.css/normalize.css';
+
 
 @import './variables.css';
 @import 'blocks/grid/grid.css';
 @import 'blocks/typography/typography.css';
 @import 'blocks/buttons/buttons.css';
+@import 'blocks/header/header.css';
 
