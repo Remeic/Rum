@@ -9,6 +9,7 @@
 
   --baseFont: "Lato", sans-serif;
   --alternativeFont: "Karla", sans-serif;
+  --headerLinksFontSize: 1.2em;
 
   --timing: .3s;
 }

@@ -1,0 +1,37 @@
+.nav{
+    background-color: var(--primaryColor);
+    display: flex;
+    color: white;
+    position: relative;
+    margin: 0;
+    &--left{
+        justify-content: left;
+    }
+
+    &--middle{
+        justify-content: center;
+    }
+
+    &--right{
+        justify-content: right;
+    }
+
+    ul li{
+        display: inline-block;
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+        font-size: var(--headerLinksFontSize);
+    }
+
+    .mobile__button{
+        .fa{
+            font-size: 2rem;
+            right: 0;
+            top: 0;
+            color: white;
+            position: absolute;
+            padding: 0.8rem;
+        }
+    }
+    
+}
