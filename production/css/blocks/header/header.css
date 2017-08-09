@@ -30,6 +30,7 @@
     }
 
     .mobile__button{
+        display: inline-block;
         .fa{
             font-size: 2rem;
             right: 0;
@@ -37,6 +38,9 @@
             color: white;
             position: absolute;
             padding: 0.8rem;
+        }
+        @media(--desktop){
+            display: none;
         }
     }
     

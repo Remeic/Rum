@@ -1239,6 +1239,10 @@ p {
     border-bottom: .1em solid;
 }
 
+.nav .mobile__button {
+    display: inline-block;
+}
+
 .nav .mobile__button .fa {
     font-size: 32px;
     font-size: 2rem;
@@ -1266,6 +1270,13 @@ p {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
+}
+
+@media(min-width:1200px) {
+
+    .nav .mobile__button {
+        display: none;
+    }
 }
 
 .hidden {
