@@ -4,6 +4,8 @@
     color: white;
     position: relative;
     margin: 0;
+    align-items: center;
+
     &--left{
         justify-content: left;
     }
@@ -21,6 +23,10 @@
         padding: 0.2rem 0.5rem;
         cursor: pointer;
         font-size: var(--headerLinksFontSize);
+        color: white;
+        &:hover{
+            border-bottom: .1em solid;
+        }
     }
 
     .mobile__button{
