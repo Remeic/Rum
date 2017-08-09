@@ -1,0 +1,15 @@
+.hidden{
+    display: none !important;
+}
+
+.text-to-{
+    &left{
+        text-align: left;
+    }
+    &right{
+        text-align: right;
+    }
+    &center{
+        text-align: center;
+    }
+}

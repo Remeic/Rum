@@ -1268,5 +1268,23 @@ p {
     justify-content: right;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.text-to- {
+}
+
+.text-to-left {
+    text-align: left;
+}
+
+.text-to-right {
+    text-align: right;
+}
+
+.text-to-center {
+    text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */
