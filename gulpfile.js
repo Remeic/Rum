@@ -8,6 +8,7 @@ var cssBeautify = require('gulp-cssbeautify');
 var rename = require('gulp-rename');
 var htmlmin = require('gulp-htmlmin');
 var htmlReplace = require('gulp-html-replace');
+var runSequence = require("run-sequence")
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
@@ -104,7 +105,9 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch("./production/**").on("change", reload);
+    gulp.watch("./production/**").on("change", ()=>{
+        runSequence("default", reload)
+    });
 });
 
 
