@@ -1,4 +1,4 @@
 /* Class that contains grid columns */
 .container{
-  lost-utility: clearfix;
+  display: flex;
 }

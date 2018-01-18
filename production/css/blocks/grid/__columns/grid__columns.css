@@ -1,116 +1,97 @@
-
-.col{
-  lost-utility: clearfix;
-  box-sizing: border-box;
+.col {
+  display: block;
 }
 
-.col-mobile{
-    .one-half{ 
-        lost-column:1/2 !important;
-    }
-    .one-thirds{
-        lost-column:1/3 !important;
-    }
-    .one-quarter{
-        lost-column:1/4 !important;
-    }
-    .two-thirds{ 
-        lost-column:2/3 !important; 
-    }
-    .two-quarter{
-        lost-column:2/4 !important; 
-    }
-    .three-quarter{
-        lost-column:3/4 !important; 
-    }
+.col-mobile {
+  .one-half {
+    width: 50%;
+    flex-basis: 50% !important;
+  }
+  .one-thirds {
+    width: 33%;
+    flex-basis: 33% !important;
+  }
+  .one-quarter {
+    width: 25%;
+    flex-basis: 25% !important;
+  }
+  .two-thirds {
+    width: calc((2/3)*100%);
+    flex-basis: calc((2/3)*100%) !important;
+  }
+  .two-quarter {
+    width: calc((2/4)*100%);
+    flex-basis: calc((2/4)*100%) !important;
+  }
+  .three-quarter {
+    width: calc((3/4)*100%);
+    flex-basis: calc((3/4)*100%) !important;
+  }
 }
 
 /** Class that identify a full width column **/
 .full {
-    lost-column:1/1;
+  width: 100%;
+  flex-basis: 100%;
 }
 
 /** Class that identify a one half column **/
 .one-half {
-    lost-column:1/1;
-    
-    @media(--tablet){
-        lost-column:1/2;
-    }
+  width: 100%;
+  flex-basis: 100%;
 
-    @media(--desktop){
-        lost-column:1/2;
-    }
-    
+  @media (--tablet) {
+    width: calc((1/2)*100%);
+    flex-basis: calc((1/2)*100%);
+  }
 }
 
 /** Class that identify a two thirds column **/
-.two-thirds{
-    lost-column:1/1;
-    
-    @media(--tablet){
-        lost-column:2/3;
-    }
-
-    @media(--desktop){
-        lost-column:2/3;
-    }
-    
+.two-thirds {
+  width: 100%;
+  flex-basis: 100%;
+  @media (--tablet) {
+    width: calc((2/3)*100%);
+    flex-basis: calc((2/3)*100%);
+  }
 }
 
 /** Class that identify a one thirds column **/
-.one-thirds{
-    lost-column:1/1;
-    
-    @media(--tablet){
-        lost-column:2/3;
-    }
-
-    @media(--desktop){
-        lost-column:2/3;
-    }
-
+.one-thirds {
+  width: 100%;
+  flex-basis: 100%;
+  @media (--tablet) {
+    width: calc((1/3)*100%);
+    flex-basis: calc((1/3)*100%);
+  }
 }
 
 /** Class that identify a one quarter column **/
-.one-quarter{
-    lost-column:1/1;
-    
-    @media(--tablet){
-        lost-column:1/4;
-    }
-
-    @media(--desktop){
-        lost-column:1/4;
-    }
-
+.one-quarter {
+  width: 100%;
+  flex-basis: 100%;
+  @media (--tablet) {
+    width: calc((1/4)*100%);
+    flex-basis: calc((1/4)*100%);
+  }
 }
 
 /** Class that identify a two quarter column **/
-.two-quarter{
-    lost-column:1/1;
-    
-    @media(--tablet){
-        lost-column:2/4;
-    }
-
-    @media(--desktop){
-        lost-column:2/4;
-    }
-
+.two-quarter {
+  width: 100%;
+  flex-basis: 100%;
+  @media (--tablet) {
+    width: calc((1/2)*100%);
+    flex-basis: calc((1/2)*100%);
+  }
 }
 
-
 /** Class that identify a three quarter column **/
-.three-quarter{
-    lost-column:1/1;
-    
-    @media(--tablet){
-        lost-column:3/4;
-    }
-
-    @media(--desktop){
-        lost-column:3/4;
-    }
-
+.three-quarter {
+  width: 100%;
+  flex-basis: 100%;
+  @media (--tablet) {
+    width: calc((3/4)*100%);
+    flex-basis: calc((3/4)*100%);
+  }
 }
