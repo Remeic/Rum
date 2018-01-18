@@ -1,6 +1,6 @@
 {
-  "name": "giuggiola-css",
-  "version": "0.0.1",
+  "name": "Rum",
+  "version": "0.0.2",
   "description": "Css framework",
   "main": "gulpfile.js",
   "dependencies": {
@@ -14,8 +14,6 @@
     "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.4.1",
-    "lazypipe": "^1.0.1",
-    "lost": "^8.0.0",
     "normalize.css": "^7.0.0",
     "postcss": "^5.2.16",
     "postcss-browser-reporter": "^0.5.0",
@@ -34,7 +32,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://giuliofagioli@bitbucket.org/giuliofagioli/giuggiola-css.git",
+  "repository": "https://github.com/Remeic/Rum",
   "keywords": [
     "css",
     "postcss",
@@ -43,6 +41,5 @@
     "js"
   ],
   "author": "Giulio Fagioli",
-  "license": "MIT",
-  "homepage": "https://bitbucket.org/giuliofagioli/giuggiola-css#readme"
+  "license": "MIT"
 }
