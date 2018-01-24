@@ -1,8 +1,9 @@
-/* Class that contains grid columns */
+/* Class that contains row */
 .container{
   display: flex;
 }
 
+/* Class that contains columns */
 .row{
   display: flex;
   flex: 1;
