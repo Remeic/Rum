@@ -2,3 +2,10 @@
 .container{
   display: flex;
 }
+
+.row{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
