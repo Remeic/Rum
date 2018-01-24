@@ -15,7 +15,7 @@ var reload = browserSync.reload;
 
 /* Path */
 
-var baseDir = "./production/"
+var baseDir = "./src/"
 
 /* CSS Task */
 
@@ -85,8 +85,8 @@ gulp.task('minify-html', function() {
 /* Gulp watcher */
 
 gulp.task('poster', function() {
-    gulp.watch('production/css/**', ['css', 'minify-css']);
-    gulp.watch('production/html/**', ['minify-html']);
+    gulp.watch(baseDir+'css/**', ['css', 'minify-css']);
+    gulp.watch(baseDir + "html/**", ["minify-html"])
     browserSync.reload();
 });
 
@@ -105,9 +105,9 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch("./production/**").on("change", ()=>{
-        runSequence("default", reload)
-    });
+    gulp.watch(baseDir + "**").on("change", () => {
+      runSequence("default", reload)
+    })
 });
 
 

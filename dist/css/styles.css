@@ -611,9 +611,6 @@ template {
     display: flex;
 }
 
-.row {
-}
-
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -713,7 +710,6 @@ p {
 
 .button--large {
     font-size: 2em;
-    background: red;
 }
 
 .button--alt {
