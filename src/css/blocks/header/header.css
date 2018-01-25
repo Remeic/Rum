@@ -5,6 +5,8 @@
     position: relative;
     margin: 0;
     align-items: center;
+    height: 4rem;
+    padding: 0px 1rem 0px 4.5rem;
 
     &--left{
         justify-content: left;
@@ -18,25 +20,40 @@
         justify-content: right;
     }
 
-    ul li{
-        display: inline-block;
-        padding: 0.2rem 0.5rem;
-        cursor: pointer;
-        font-size: var(--headerLinksFontSize);
-        color: white;
-        &:hover{
-            border-bottom: .1em solid;
+    .menu {
+        display: none;
+    }
+
+    @media(--tablet) {
+        .menu {
+            display: inline-block;
+            li {
+                display: inline-block;
+                padding: 0px 1rem;
+                cursor: pointer;
+                font-size: var(--headerLinksFontSize);
+                color: white;
+                &:hover {
+                    font-size: calc(var(--headerLinksFontSize) + 0.3rem);
+                }
         }
+    }
+    
     }
 
     .mobile__button{
         display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        margin: 0.5rem 0.75rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+
         .fa{
-            font-size: 2rem;
-            right: 0;
-            top: 0;
+            font-size: 1.5rem;
             color: white;
-            position: absolute;
+            cursor: pointer;
             padding: 0.8rem;
         }
         @media(--desktop){

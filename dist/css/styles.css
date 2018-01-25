@@ -603,12 +603,29 @@ template {
     }
 }
 
-/* Class that contains grid columns */
+/* Class that contains row */
 
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+
+/* Class that contains columns */
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 html {
@@ -729,32 +746,34 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    height: 64px;
+    height: 4rem;
+    padding: 0px 16px 0px 72px;
+    padding: 0px 1rem 0px 4.5rem;
 }
 
-.nav ul li {
-    display: inline-block;
-    padding: 3.2px 8px;
-    padding: 0.2rem 0.5rem;
-    cursor: pointer;
-    font-size: 1.2em;
-    color: white;
-}
-
-.nav ul li:hover {
-    border-bottom: .1em solid;
+.nav .menu {
+    display: none;
 }
 
 .nav .mobile__button {
     display: inline-block;
+    height: 48px;
+    height: 3rem;
+    width: 48px;
+    width: 3rem;
+    margin: 8px 12px;
+    margin: 0.5rem 0.75rem;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .nav .mobile__button .fa {
-    font-size: 32px;
-    font-size: 2rem;
-    right: 0;
-    top: 0;
+    font-size: 24px;
+    font-size: 1.5rem;
     color: white;
-    position: absolute;
+    cursor: pointer;
     padding: 12.8px;
     padding: 0.8rem;
 }
@@ -775,6 +794,25 @@ p {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
+}
+
+@media(min-width:768px) {
+
+    .nav .menu {
+        display: inline-block;
+    }
+
+    .nav .menu li {
+        display: inline-block;
+        padding: 0px 1rem;
+        cursor: pointer;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    .nav .menu li:hover {
+        font-size: calc(1.2em + 0.3rem);
+    }
 }
 
 @media(min-width:1200px) {
