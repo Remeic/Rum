@@ -29,7 +29,6 @@ gulp.task('minify-css', function() {
             require("precss")(),
             require("postcss-import")(),
             require("postcss-cssnext")(),
-            require("lost")(),
         ]))
         .pipe(cssNano())
         .pipe(rename({
@@ -49,7 +48,6 @@ gulp.task('css', function() {
             require("precss")(),
             require("postcss-import")(),
             require("postcss-cssnext")(),
-            require("lost")(),
         ]))
         .pipe(cssBeautify())
         .pipe(rename({
