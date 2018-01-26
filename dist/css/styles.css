@@ -455,6 +455,14 @@ template {
 
 .col {
     display: block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 8px;
+    padding: 0.5rem;
+}
+
+.col-mobile .one {
 }
 
 .col-mobile .one-half {
@@ -469,10 +477,7 @@ template {
     flex-basis: 33% !important;
 }
 
-.col-mobile .one-quarter {
-    width: 25%;
-    -ms-flex-preferred-size: 25% !important;
-    flex-basis: 25% !important;
+.col-mobile .two {
 }
 
 .col-mobile .two-thirds {
@@ -487,7 +492,7 @@ template {
     flex-basis: 50% !important;
 }
 
-.col-mobile .three-quarter {
+.col-mobile .two-quarter {
     width: 75%;
     -ms-flex-preferred-size: 75% !important;
     flex-basis: 75% !important;
@@ -499,9 +504,13 @@ template {
     width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
-/** Class that identify a one half column **/
+.one {
+}
 
 .one-half {
     width: 100%;
@@ -515,27 +524,11 @@ template {
         width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
     }
 }
-
-/** Class that identify a two thirds column **/
-
-.two-thirds {
-    width: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-}
-
-@media (min-width:768px) {
-
-    .two-thirds {
-        width: 66.66667%;
-        -ms-flex-preferred-size: 66.66667%;
-        flex-basis: 66.66667%;
-    }
-}
-
-/** Class that identify a one thirds column **/
 
 .one-thirds {
     width: 100%;
@@ -549,15 +542,19 @@ template {
         width: 33.33333%;
         -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
     }
 }
-
-/** Class that identify a one quarter column **/
 
 .one-quarter {
     width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 @media (min-width:768px) {
@@ -569,7 +566,26 @@ template {
     }
 }
 
-/** Class that identify a two quarter column **/
+.two {
+}
+
+.two-thirds {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+
+@media (min-width:768px) {
+
+    .two-thirds {
+        width: 66.66667%;
+        -ms-flex-preferred-size: 66.66667%;
+        flex-basis: 66.66667%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
 
 .two-quarter {
     width: 100%;
@@ -583,10 +599,14 @@ template {
         width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
     }
 }
 
-/** Class that identify a three quarter column **/
+.three {
+}
 
 .three-quarter {
     width: 100%;
@@ -600,6 +620,9 @@ template {
         width: 75%;
         -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
     }
 }
 
@@ -829,7 +852,7 @@ p {
     justify-content: right;
 }
 
-@media(min-width:1200px) {
+@media (min-width:1200px) {
 
     .nav .menu {
         display: inline-block;
@@ -844,11 +867,11 @@ p {
     }
 
     .nav .menu li:hover {
-        text-shadow: 1px 2px #474444;
+        font-weight: bold;
     }
 }
 
-@media(min-width:1200px) {
+@media (min-width:1200px) {
 
     .nav .mobile__button {
         display: none;

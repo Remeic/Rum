@@ -1,31 +1,33 @@
 .col {
   display: block;
+  flex: 1;
+  padding: 0.5rem;
 }
 
 .col-mobile {
-  .one-half {
-    width: 50%;
-    flex-basis: 50% !important;
+  .one {
+    &-half {
+      width: 50%;
+      flex-basis: 50% !important;
+    }
+    &-thirds {
+      width: 33%;
+      flex-basis: 33% !important;
+    }
   }
-  .one-thirds {
-    width: 33%;
-    flex-basis: 33% !important;
-  }
-  .one-quarter {
-    width: 25%;
-    flex-basis: 25% !important;
-  }
-  .two-thirds {
-    width: calc((2/3)*100%);
-    flex-basis: calc((2/3)*100%) !important;
-  }
-  .two-quarter {
-    width: calc((2/4)*100%);
-    flex-basis: calc((2/4)*100%) !important;
-  }
-  .three-quarter {
-    width: calc((3/4)*100%);
-    flex-basis: calc((3/4)*100%) !important;
+  .two {
+    &-thirds {
+      width: calc((2/3)*100%);
+      flex-basis: calc((2/3)*100%) !important;
+    }
+    &-quarter {
+      width: calc((2/4)*100%);
+      flex-basis: calc((2/4)*100%) !important;
+    }
+    &-quarter {
+      width: calc((3/4)*100%);
+      flex-basis: calc((3/4)*100%) !important;
+    }
   }
 }
 
@@ -33,65 +35,70 @@
 .full {
   width: 100%;
   flex-basis: 100%;
+  flex: 1;
 }
 
-/** Class that identify a one half column **/
-.one-half {
-  width: 100%;
-  flex-basis: 100%;
-
-  @media (--tablet) {
-    width: calc((1/2)*100%);
-    flex-basis: calc((1/2)*100%);
+.one {
+  &-half {
+    width: 100%;
+    flex-basis: 100%;
+    @media (--tablet) {
+      width: calc((1/2)*100%);
+      flex-basis: calc((1/2)*100%);
+      flex: 1;
+    }
+  }
+  &-thirds {
+    width: 100%;
+    flex-basis: 100%;
+    @media (--tablet) {
+      width: calc((1/3)*100%);
+      flex-basis: calc((1/3)*100%);
+      flex: 1;
+    }
+  }
+  &-quarter {
+    width: 100%;
+    flex-basis: 100%;
+    flex: 1;    
+    @media (--tablet) {
+      width: calc((1/4)*100%);
+      flex-basis: calc((1/4)*100%);
+    }
   }
 }
 
-/** Class that identify a two thirds column **/
-.two-thirds {
-  width: 100%;
-  flex-basis: 100%;
-  @media (--tablet) {
-    width: calc((2/3)*100%);
-    flex-basis: calc((2/3)*100%);
+.two {
+  &-thirds {
+    width: 100%;
+    flex-basis: 100%;
+    @media (--tablet) {
+      width: calc((2/3)*100%);
+      flex-basis: calc((2/3)*100%);
+      flex: 1;
+    }
   }
+
+  &-quarter {
+    width: 100%;
+    flex-basis: 100%;    
+    @media (--tablet) {
+      width: calc((1/2)*100%);
+      flex-basis: calc((1/2)*100%);
+      flex: 1;
+    }
+  }
+
 }
 
-/** Class that identify a one thirds column **/
-.one-thirds {
-  width: 100%;
-  flex-basis: 100%;
-  @media (--tablet) {
-    width: calc((1/3)*100%);
-    flex-basis: calc((1/3)*100%);
-  }
-}
-
-/** Class that identify a one quarter column **/
-.one-quarter {
-  width: 100%;
-  flex-basis: 100%;
-  @media (--tablet) {
-    width: calc((1/4)*100%);
-    flex-basis: calc((1/4)*100%);
-  }
-}
-
-/** Class that identify a two quarter column **/
-.two-quarter {
-  width: 100%;
-  flex-basis: 100%;
-  @media (--tablet) {
-    width: calc((1/2)*100%);
-    flex-basis: calc((1/2)*100%);
-  }
-}
-
-/** Class that identify a three quarter column **/
-.three-quarter {
-  width: 100%;
-  flex-basis: 100%;
-  @media (--tablet) {
-    width: calc((3/4)*100%);
-    flex-basis: calc((3/4)*100%);
+.three{
+  &-quarter {
+    width: 100%;
+    flex-basis: 100%;
+    @media (--tablet) {
+      width: calc((3/4)*100%);
+      flex-basis: calc((3/4)*100%);
+      flex: 1;
+    }
   }
 }
