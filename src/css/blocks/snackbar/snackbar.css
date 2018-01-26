@@ -1,0 +1,18 @@
+.snackbar{
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--primaryColor);
+  padding: 1rem 0rem;
+  color: white;
+  
+  &--error{
+    background-color: var(--errorColor);
+  }
+
+  &--success {
+    background-color: var(--successColor);
+  }
+}
