@@ -22,19 +22,50 @@
 
     .menu {
         display: none;
+
+        &__opened{
+            display: block;
+            position: absolute;
+            top: 100%;
+            z-index: 2;
+            color: white;
+            width: 100%;
+            background: var(--primaryColor);
+            left: 0;
+            right: 0;
+            margin: 0;
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
+
+            li{
+                font-size: 1.3em;
+                padding: 1rem 0rem;
+                font-size: var(--navbarLinksMobileFontSize);
+
+                &:last-child{
+                    margin-bottom: 2rem;
+                }
+
+                cursor: pointer;
+                &:hover{
+                    background-color: var(--secondaryColor);
+                }
+            }
+        }
     }
 
-    @media(--tablet) {
+    @media(--desktop) {
         .menu {
             display: inline-block;
             li {
                 display: inline-block;
                 padding: 0px 1rem;
                 cursor: pointer;
-                font-size: var(--headerLinksFontSize);
+                font-size: var(--navbarLinksFontSize);
                 color: white;
                 &:hover {
-                    font-size: calc(var(--headerLinksFontSize) + 0.3rem);
+                    text-shadow: 1px 2px #474444;
                 }
         }
     }
