@@ -738,6 +738,15 @@ p {
     font-weight: 700;
     cursor: pointer;
     transition: all .3s;
+    text-decoration: none;
+}
+
+.button--alt {
+    box-sizing: border-box;
+    border: 2px solid #2979FF;
+    color: #2979FF;
+    padding: 4.8px 16px;
+    padding: 0.3rem 1rem;
 }
 
 .button:hover {
@@ -750,6 +759,14 @@ p {
 
 .button--large {
     font-size: 2em;
+}
+
+.button--success {
+    background-color: #4CAF50;
+}
+
+.button--error {
+    background-color: #E53935;
 }
 
 .button--alt {

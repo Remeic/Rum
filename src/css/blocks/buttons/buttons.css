@@ -12,6 +12,14 @@
     font-weight: 700;
     cursor: pointer;
     transition: all var(--timing);
+    text-decoration: none;
+
+    &--alt{
+        box-sizing: border-box;
+        border: 2px solid var(--primaryColor);
+        color: var(--primaryColor);
+        padding: 0.3rem 1rem;
+    }
 
     &:hover{
         box-shadow: 0 2px 4px rgba(0,0,0,.25)
@@ -23,6 +31,15 @@
 
     &--large{
         font-size: var(--buttonTextLargeDimension);
+    }
+
+    &--success {
+        background-color: var(--successColor);
+
+    }
+
+    &--error {
+        background-color: var(--errorColor);
     }
 
     &--alt{
