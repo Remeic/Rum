@@ -90,10 +90,24 @@ gulp.task('poster', function() {
     browserSync.reload();
 });
 
+/* Gulp js Task */
+
+gulp.task("js", function() {
+  return gulp
+    .src(baseDir + "js/index.js")
+    .pipe(sourceMaps.init())
+    .pipe(
+      rename({
+        basename: "script"
+      })
+    )
+    .pipe(sourceMaps.write("."))
+    .pipe(gulp.dest("dist/js/"))
+})
 
 /* Gulp Default Task */
 
-gulp.task('default', ['minify-css','css', 'minify-html']);
+gulp.task('default', ['minify-css','css', 'minify-html','js']);
 
 gulp.task('serve', function() {
 
@@ -110,11 +124,3 @@ gulp.task('serve', function() {
     })
 });
 
-
-gulp.task('static', () => {
-    return gulp.src('**/*.js')
-        .pipe(excludeGitignore())
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
-});
