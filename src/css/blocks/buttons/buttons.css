@@ -13,6 +13,7 @@
     cursor: pointer;
     transition: all var(--timing);
     text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
 
     &--alt{
         box-sizing: border-box;
