@@ -4,6 +4,10 @@
   flex-direction: column;
   flex: 1 1 100%;
   width: 100vw;
+
+  .row {
+    margin-bottom: var(--rowMargin);
+  }
 }
 
 /* Class that contains columns */

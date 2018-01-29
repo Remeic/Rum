@@ -13,6 +13,10 @@
   --alternativeFont: "Karla", sans-serif;
   --navbarLinksFontSize: 1.2em;
   --navbarLinksMobileFontSize: 1.3em;
+
+  --rowMargin: 1%;
+  --colPadding: 1%;
+  
   --timing: .3s;
 }
 
