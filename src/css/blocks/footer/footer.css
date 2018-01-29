@@ -1,0 +1,11 @@
+.footer{
+  display: flex;
+  flex: 1 1 100%;
+  background-color: var(--primaryColor);
+  width: 100%;
+  justify-content: center;
+   &--about {
+     background-color: var(--secondaryColor);
+     text-align: center;
+   }
+}
