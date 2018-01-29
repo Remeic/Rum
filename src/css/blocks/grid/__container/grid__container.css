@@ -4,6 +4,13 @@
   flex-direction: column;
   flex: 1 1 100%;
   width: 100vw;
+
+  .row:first-of-type {
+    margin: var(--rowMargin) 0px;
+  }
+  .row{
+    margin-bottom: var(--rowMargin);
+  }
 }
 
 /* Class that contains columns */
