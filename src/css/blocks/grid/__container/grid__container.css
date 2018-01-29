@@ -1,6 +1,9 @@
 /* Class that contains row */
 .container{
   display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  width: 100vw;
 }
 
 /* Class that contains columns */
