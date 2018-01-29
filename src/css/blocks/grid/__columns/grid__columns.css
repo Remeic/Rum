@@ -7,25 +7,25 @@
 .col-mobile {
   .one {
     &-half {
-      width: 50%;
+      max-width: 50%;
       flex-basis: 50% !important;
     }
     &-thirds {
-      width: 33%;
+      max-width: 33%;
       flex-basis: 33% !important;
     }
   }
   .two {
     &-thirds {
-      width: calc((2/3)*100%);
+      max-width: calc((2/3)*100%);
       flex-basis: calc((2/3)*100%) !important;
     }
     &-quarter {
-      width: calc((2/4)*100%);
+      max-width: calc((2/4)*100%);
       flex-basis: calc((2/4)*100%) !important;
     }
     &-quarter {
-      width: calc((3/4)*100%);
+      max-width: calc((3/4)*100%);
       flex-basis: calc((3/4)*100%) !important;
     }
   }
@@ -33,7 +33,7 @@
 
 /** Class that identify a full width column **/
 .full {
-  width: 100%;
+  max-width: 100%;
   flex-basis: 100%;
   flex: 1;
 }
@@ -41,31 +41,31 @@
 .one {
   max-width: 100%;
   flex-basis: 100%;
-  
+
   &-half {
-    width: 100%;
+    max-width: 100%;
     flex-basis: 100%;
     @media (--tablet) {
-      width: calc((1/2)*100%);
+      max-width: calc((1/2)*100%);
       flex-basis: calc((1/2)*100%);
       flex: 1;
     }
   }
   &-thirds {
-    width: 100%;
+    max-width: 100%;
     flex-basis: 100%;
     @media (--tablet) {
-      width: calc((1/3)*100%);
+      max-width: calc((1/3)*100%);
       flex-basis: calc((1/3)*100%);
       flex: 1;
     }
   }
   &-quarter {
-    width: 100%;
+    max-width: 100%;
     flex-basis: 100%;
     flex: 1;    
     @media (--tablet) {
-      width: calc((1/4)*100%);
+      max-width: calc((1/4)*100%);
       flex-basis: calc((1/4)*100%);
     }
   }
@@ -73,20 +73,20 @@
 
 .two {
   &-thirds {
-    width: 100%;
+    max-width: 100%;
     flex-basis: 100%;
     @media (--tablet) {
-      width: calc((2/3)*100%);
+      max-width: calc((2/3)*100%);
       flex-basis: calc((2/3)*100%);
       flex: 1;
     }
   }
 
   &-quarter {
-    width: 100%;
+    max-width: 100%;
     flex-basis: 100%;    
     @media (--tablet) {
-      width: calc((1/2)*100%);
+      max-width: calc((1/2)*100%);
       flex-basis: calc((1/2)*100%);
       flex: 1;
     }
@@ -96,10 +96,10 @@
 
 .three{
   &-quarter {
-    width: 100%;
+    max-width: 100%;
     flex-basis: 100%;
     @media (--tablet) {
-      width: calc((3/4)*100%);
+      max-width: calc((3/4)*100%);
       flex-basis: calc((3/4)*100%);
       flex: 1;
     }

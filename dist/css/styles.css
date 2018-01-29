@@ -465,13 +465,13 @@ template {
 }
 
 .col-mobile .one-half {
-    width: 50%;
+    max-width: 50%;
     -ms-flex-preferred-size: 50% !important;
     flex-basis: 50% !important;
 }
 
 .col-mobile .one-thirds {
-    width: 33%;
+    max-width: 33%;
     -ms-flex-preferred-size: 33% !important;
     flex-basis: 33% !important;
 }
@@ -480,19 +480,19 @@ template {
 }
 
 .col-mobile .two-thirds {
-    width: 66.66667%;
+    max-width: 66.66667%;
     -ms-flex-preferred-size: 66.66667% !important;
     flex-basis: 66.66667% !important;
 }
 
 .col-mobile .two-quarter {
-    width: 50%;
+    max-width: 50%;
     -ms-flex-preferred-size: 50% !important;
     flex-basis: 50% !important;
 }
 
 .col-mobile .two-quarter {
-    width: 75%;
+    max-width: 75%;
     -ms-flex-preferred-size: 75% !important;
     flex-basis: 75% !important;
 }
@@ -500,7 +500,7 @@ template {
 /** Class that identify a full width column **/
 
 .full {
-    width: 100%;
+    max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     -webkit-box-flex: 1;
@@ -515,7 +515,7 @@ template {
 }
 
 .one-half {
-    width: 100%;
+    max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
 }
@@ -523,7 +523,7 @@ template {
 @media (min-width:768px) {
 
     .one-half {
-        width: 50%;
+        max-width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
         -webkit-box-flex: 1;
@@ -533,7 +533,7 @@ template {
 }
 
 .one-thirds {
-    width: 100%;
+    max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
 }
@@ -541,7 +541,7 @@ template {
 @media (min-width:768px) {
 
     .one-thirds {
-        width: 33.33333%;
+        max-width: 33.33333%;
         -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
         -webkit-box-flex: 1;
@@ -551,7 +551,7 @@ template {
 }
 
 .one-quarter {
-    width: 100%;
+    max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     -webkit-box-flex: 1;
@@ -562,7 +562,7 @@ template {
 @media (min-width:768px) {
 
     .one-quarter {
-        width: 25%;
+        max-width: 25%;
         -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     }
@@ -572,7 +572,7 @@ template {
 }
 
 .two-thirds {
-    width: 100%;
+    max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
 }
@@ -580,7 +580,7 @@ template {
 @media (min-width:768px) {
 
     .two-thirds {
-        width: 66.66667%;
+        max-width: 66.66667%;
         -ms-flex-preferred-size: 66.66667%;
         flex-basis: 66.66667%;
         -webkit-box-flex: 1;
@@ -590,7 +590,7 @@ template {
 }
 
 .two-quarter {
-    width: 100%;
+    max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
 }
@@ -598,7 +598,7 @@ template {
 @media (min-width:768px) {
 
     .two-quarter {
-        width: 50%;
+        max-width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
         -webkit-box-flex: 1;
@@ -611,7 +611,7 @@ template {
 }
 
 .three-quarter {
-    width: 100%;
+    max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
 }
@@ -619,7 +619,7 @@ template {
 @media (min-width:768px) {
 
     .three-quarter {
-        width: 75%;
+        max-width: 75%;
         -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
         -webkit-box-flex: 1;
