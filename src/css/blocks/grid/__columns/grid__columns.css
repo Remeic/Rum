@@ -39,6 +39,9 @@
 }
 
 .one {
+  max-width: 100%;
+  flex-basis: 100%;
+  
   &-half {
     width: 100%;
     flex-basis: 100%;
