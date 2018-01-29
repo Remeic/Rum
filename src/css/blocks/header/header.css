@@ -7,6 +7,7 @@
   align-items: center;
   height: 4rem;
   padding: 0px 1rem 0px 4.5rem;
+  z-index: 99;
 
   &--left {
     justify-content: left;
@@ -18,6 +19,12 @@
 
   &--right {
     justify-content: right;
+  }
+
+  &--sticky{
+    width: 100%;
+    position: fixed;
+    top: 0;
   }
 
   .menu {

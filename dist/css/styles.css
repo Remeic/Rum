@@ -803,6 +803,7 @@ p {
     height: 4rem;
     padding: 0px 16px 0px 72px;
     padding: 0px 1rem 0px 4.5rem;
+    z-index: 99;
 }
 
 .nav .menu {
@@ -881,6 +882,12 @@ p {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
+}
+
+.nav--sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 @media (min-width:1200px) {
