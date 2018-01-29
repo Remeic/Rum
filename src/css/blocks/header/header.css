@@ -22,7 +22,7 @@
 
   .menu {
     display: none;
-
+    padding: 0px;
     &__opened {
       display: block;
       position: absolute;
