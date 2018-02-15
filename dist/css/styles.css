@@ -811,8 +811,6 @@ p {
     align-items: center;
     height: 64px;
     height: 4rem;
-    padding: 0px 16px 0px 72px;
-    padding: 0px 1rem 0px 4.5rem;
     z-index: 99;
 }
 
@@ -876,6 +874,14 @@ p {
     padding: 0.8rem;
 }
 
+.nav .logo {
+    margin: 0 auto;
+}
+
+.nav .logo h1, .nav .logo h2, .nav .logo h3, .nav .logo h4, .nav .logo h5 {
+    margin: 0px;
+}
+
 .nav--left {
     -webkit-box-pack: left;
     -ms-flex-pack: left;
@@ -901,6 +907,10 @@ p {
 }
 
 @media (min-width:1200px) {
+
+    .nav {
+        padding: 0px 1rem 0px 4.5rem;
+    }
 
     .nav .menu {
         display: inline-block;

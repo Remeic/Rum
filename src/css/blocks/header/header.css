@@ -6,7 +6,7 @@
   margin: 0;
   align-items: center;
   height: 4rem;
-  padding: 0px 1rem 0px 4.5rem;
+  
   z-index: 99;
 
   &--left {
@@ -63,6 +63,7 @@
   }
 
   @media (--desktop) {
+    padding: 0px 1rem 0px 4.5rem;
     .menu {
       display: inline-block;
       li {
@@ -96,6 +97,13 @@
 
     @media (--desktop) {
       display: none;
+    }
+  }
+
+  .logo{
+    margin: 0 auto;
+    h1,h2,h3,h4,h5{
+      margin: 0px;
     }
   }
 }
