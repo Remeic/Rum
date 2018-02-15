@@ -458,7 +458,14 @@ template {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 1%;
+    padding: 2%;
+}
+
+@media (min-width:1200px) {
+
+    .col {
+        padding: 1%;
+    }
 }
 
 .col-mobile .one {

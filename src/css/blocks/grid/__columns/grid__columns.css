@@ -1,7 +1,11 @@
 .col {
   display: block;
   flex: 1;
-  padding: var(--colPadding);
+  padding: calc(var(--colPadding)*2);
+
+  @media (--desktop) {
+    padding: var(--colPadding);
+  }
 }
 
 .col-mobile {
