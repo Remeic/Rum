@@ -2,8 +2,8 @@
 .container{
   display: flex;
   flex-direction: column;
-  flex: 1 1 1200px;
-  width: 1200px;
+  flex: 1;
+  max-width: 1200px;
   margin: 0 auto;
   
   .row {
