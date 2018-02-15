@@ -16,7 +16,13 @@
 
   --rowMargin: 1%;
   --colPadding: 1%;
-  
+
+  /** FORM VAR **/
+  --fieldsetPadding: 1%;
+  --borderRadiusFieldset: 4px;
+
+  /** --- **/ 
+
   --timing: .3s;
 }
 

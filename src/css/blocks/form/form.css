@@ -1,0 +1,30 @@
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.fieldset{
+  padding: var(--fieldsetPadding);
+  padding-left: 0px;
+  padding-right: 0px;
+  border: none;
+
+  &--error{
+    border: 1px solid var(--errorColor);
+    border-radius: var(--borderRadiusFieldset);
+  }
+}
+
+
+.input{
+  &__text {
+    border: none;
+    border-bottom: 2px solid var(--primaryColor);
+  }
+}
+

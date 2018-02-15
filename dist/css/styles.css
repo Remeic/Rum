@@ -453,6 +453,11 @@ template {
     display: none;
 }
 
+:root {
+    /** FORM VAR **/
+    /** --- **/
+}
+
 .col {
     display: block;
     -webkit-box-flex: 1;
@@ -973,6 +978,32 @@ p {
 
 .snackbar--success {
     background-color: #4CAF50;
+}
+
+input, textarea, select, button {
+    width: 150px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fieldset {
+    padding: 1%;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+}
+
+.fieldset--error {
+    border: 1px solid #E53935;
+    border-radius: 4px;
+}
+
+.input {
+}
+
+.input__text {
+    border: none;
+    border-bottom: 2px solid #2979FF;
 }
 
 /*# sourceMappingURL=styles.css.map */
