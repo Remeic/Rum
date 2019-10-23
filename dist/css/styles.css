@@ -455,7 +455,6 @@ template {
 
 .col {
     display: block;
-    -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     padding: 2%;
@@ -510,7 +509,6 @@ template {
     max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
@@ -533,7 +531,6 @@ template {
         max-width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-        -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
     }
@@ -551,7 +548,6 @@ template {
         max-width: 33.33333%;
         -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
-        -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
     }
@@ -561,7 +557,6 @@ template {
     max-width: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
@@ -590,7 +585,6 @@ template {
         max-width: 66.66667%;
         -ms-flex-preferred-size: 66.66667%;
         flex-basis: 66.66667%;
-        -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
     }
@@ -608,7 +602,6 @@ template {
         max-width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-        -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
     }
@@ -629,7 +622,6 @@ template {
         max-width: 75%;
         -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
-        -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
     }
@@ -638,14 +630,10 @@ template {
 /* Class that contains row */
 
 .container {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     max-width: 1200px;
@@ -659,14 +647,10 @@ template {
 /* Class that contains columns */
 
 .row {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-wrap: wrap;
@@ -800,13 +784,11 @@ p {
 
 .nav {
     background-color: #2979FF;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     color: white;
     position: relative;
     margin: 0;
-    -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     height: 64px;
@@ -883,19 +865,16 @@ p {
 }
 
 .nav--left {
-    -webkit-box-pack: left;
     -ms-flex-pack: left;
     justify-content: left;
 }
 
 .nav--middle {
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
 }
 
 .nav--right {
-    -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
 }
@@ -973,6 +952,76 @@ p {
 
 .snackbar--success {
     background-color: #4CAF50;
+}
+
+.input {
+    position: relative;
+}
+
+.input_text {
+    display: block;
+    margin: 0;
+    padding: 12.8px 25.6px;
+    padding: 0.8rem 1.6rem;
+    color: inherit;
+    width: 100%;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    line-height: 28.8px;
+    line-height: 1.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    transition: box-shadow 300ms;
+    background-color: #ececec;
+}
+
+.input_text:-ms-input-placeholder {
+    color: #B0BEC5;
+}
+
+.input_text::placeholder {
+    color: #B0BEC5;
+}
+
+.input_text:focus {
+    outline: none;
+    box-shadow: 0rem 0.2rem 0.6rem #2e44c4;
+}
+
+.input_label {
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    left: 16px;
+    left: 1rem;
+    color: #2e44c4;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    line-height: 28.8px;
+    line-height: 1.8rem;
+    opacity: 0;
+    transform: translate3d(0, 50%, 0)
+      scale(1);
+    transform-origin: 0 0;
+    transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1),
+      transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1),
+      visibility 0ms 300ms cubic-bezier(0.645, 0.045, 0.355, 1),
+      z-index 0ms 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.input_text:placeholder-shown + .input_label {
+    visibility: hidden;
+    z-index: -1;
+}
+
+.input_text:not(:placeholder-shown) + .input_label, .input_text:focus:not(:placeholder-shown) + .input_label {
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    transform: translate3d(0, calc(       50% -        0.64rem -        3.78rem     ), 0)       scale(0.8);
+    transition: transform 300ms,
+      visibility 0ms,
+      z-index 0ms;
 }
 
 /*# sourceMappingURL=styles.css.map */
