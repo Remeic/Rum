@@ -1,5 +1,7 @@
 # Rum 🥃
-[![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)](http://forthebadge.com)
+
+> **Warning** <br />
+> This project is no longer maintained and its use is not recommended
 
 
 An awesome CSS Framework. **Mobile First** 📱 and written with **POSTCSS** 
